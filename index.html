@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+</head>
+<body>
+   <div class="container"> 
+      <div class="calculator"> 
+         <input type="text" class="inp" placeholder="0">
+         <div class="row1"> 
+            <button class="on"> On </button>
+            <button class="off"> Off </button>
+            <button class="clear"> C </button>
+         </div>
+         <div class="row2">
+            <button class="n9"> 9 </button>
+            <button class="n8"> 8 </button>
+            <button class="n7"> 7 </button>
+            <button class="plus"> + </button>
+         </div>
+         <div class="row3">
+            <button class="n6"> 6 </button>
+            <button class="n5"> 5 </button>
+            <button class="n4"> 4 </button>
+            <button class="minus"> - </button>
+         </div>
+         <div class="row4">
+            <button class="n3"> 3 </button>
+            <button class="n2"> 2 </button>
+            <button class="n1"> 1 </button>
+            <button class="multiply"> x </button>
+         </div>
+         <div class="row5">
+            <button class="decimal"> . </button>
+            <button class="n0"> 0 </button>
+            <button class="equal"> = </button>
+            <button class="divide"> / </button>
+         </div>
+      </div>
+   </div>
+   
+</body>
+</html>
+
+<style>
+   *{
+      padding: 0;
+      margin: 0;
+   }
+   .container{
+      background-color: aqua;
+      width: 100%;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .calculator{
+      background-color: white;
+      border-radius: 15px;
+      border: 2px black;
+      border-style: solid;
+      width: 35%;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+   .inp{
+      margin-top: 23px;
+      width: 95.3%;
+      height: 70px;
+      font-size: 30px;
+      border-radius: 10px;
+      border: 2px black;
+      border-style: solid;
+   }
+   .row1{
+      margin-top: 5px;
+      width: 95.3%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+   }
+   .on{
+      width: 20%;
+      height: 50px;
+      font-size: 25px;
+      border-radius: 10px;
+   }
+   .off{
+      width: 20%;
+      height: 50px;
+      font-size: 25px;
+      border-radius: 10px;
+      margin-left: 5px;
+   }
+   .clear{
+      width: 20%;
+      height: 50px;
+      font-size: 25px;
+      border-radius: 10px;
+      margin-left: 5px;
+   }
+   .row2{
+      margin-top: 5px;
+      width: 95.3%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .n9{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .n8{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+      margin-left: 10px;
+   }
+   .n7{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+      margin-left: 10px;
+   }
+   .plus{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+      margin-left: 10px;
+   }
+   .row3{
+      margin-top: 5px;
+      width: 95.3%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .n6{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .n5{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .n4{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .minus{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .row4{
+      margin-top: 5px;
+      width: 95.3%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .n3{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .n2{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .n1{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .multiply{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .row5{
+      margin-top: 5px;
+      width: 95.3%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .decimal{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .n0{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .equal{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+   .divide{
+      width: 23%;
+      height: 100px; 
+      border-radius: 10px;
+      font-size: 30px;
+   }
+</style>
